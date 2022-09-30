@@ -11,18 +11,285 @@ body{
 
 main{
     width: 100%;
-    height: 85%;
+    height: 88%;
     align-items: center;
     justify-content: center;
     position: relative;
     background-color: rgba(250, 250, 250, 1);
 }
 
+main .container{
+    margin-top: 32px;
+    padding-bottom: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.container .account-section{
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
 
+.container .account-section .register-section{
+    width: 100%;
+    height: 572px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    outline: solid 1px rgb(214, 214, 214);
+}
+
+.account-section .register-section .logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+
+.account-section .register-section .logo img{
+    width: 175px;
+    height: 51px;
+}
+
+/*Form 9개 layer 부분*/
+.account-section .register-section form h2{
+    margin: 0px 40px 10px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
+}
+
+.account-section .register-section form .linkFacebook{
+    margin: 8px 40px 8px 40px;
+    height: 32px;
+}
+
+.account-section .register-section form .linkFacebook button{
+    border: 1;
+    padding: 5px 9px 5px 9px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51, 133, 255);
+    border-radius: 4px;
+}
+
+.account-section .register-section form .linkFacebook button #facebook_logo_img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.account-section .register-section form .linkFacebook button .facebook-text{
+    color: #fff;
+    font-weight: bold;
+}
+
+.account-section .register-section form .or-section{
+    margin: 10px 40px 18px 40px;
+    width: 268px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.account-section .register-section form .or-section .contour{
+    height: 0.1px;
+    width: 103px;
+    background-color: rgb(139, 139, 139);
+}
+
+.account-section .register-section form .or-section .text-or{
+    margin: 0px 18px 0px 18px;
+    display: inline-block;
+    height: 15px;
+    font-size: 12.7px;
+    font-weight: 550;
+    color: rgb(139, 139, 139);
+}
+
+/*등록섹션-등록파트*/
+.account-section .register-section .register-wrapper form .register{
+    /*margin-top: 24px;*/
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.account-section .register-section .register-wrapper .register .input-section{
+    margin: 0px 40px 6px 40px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.account-section .register-section .register-wrapper .register .input-section input{
+    width: 268px;
+    height: 36px;
+    padding: 9px 8px 7px 8px;
+    background-color: rgb(243, 245, 245);
+    font-size: 13px;
+    outline: #999 solid 1px;
+}
+
+.account-section .register-section .register .input-section label{
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    font-weight: 170;
+    font-size: 12px;
+    color: rgba(82, 82, 82, 0.8);
+    transition: all 0.2s ease;
+}
+
+.account-section .register-section .register .input-section input:valid + label{
+    top: 1.5px;
+    font-size: 10px;
+}
+
+.account-section .register-section .register .input-section .seePW-wrapper{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding-right: 8px;
+}
+
+.seePW-wrapper .seePW .btn-seePW{
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.account-section .register-section .register p{
+    width: 268px;
+    height: 48px;
+    margin: 10px 40px 10px 40px;
+    font-size: 12px;
+    color: #999;
+}
+
+.account-section .register-section .register p span{
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.account-section .register-section .register .btn-section{
+    margin: 8px 40px 8px 40px;
+    width: 268px;
+}
+
+.account-section .register-section .register-wrapper .register .btn-section .btn-signup{
+    width: 268px;
+    height: 30px;
+    border: 1;
+    padding: 5px 9px 5px 9px;
+    margin: auto;
+    display: block;
+    color: white;
+    background-color: rgb(44, 140, 250);
+    cursor: pointer;
+}
+
+/*로그인 파트*/
+.container .account-section .login-section{
+    background-color: white;
+    border: 1;
+    width: 100%;
+    height: 63px;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;;
+    outline: solid 1px rgb(214, 214, 214);
+}
+
+.container .account-section .login-section .text-wrapper{
+    width: 212px;
+    height: 48px;
+    /*margin-top: -3px;
+    margin-bottom: -4px;*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.container .account-section .login-section .text-wrapper p{
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .account-section .login-section .text-wrapper p span{
+    color: rgb(31, 91, 255);
+    font-weight: 600;
+}
+
+/*다운로드 파트*/
+.container .account-section .download-section{
+    text-align: center;
+    height: 102px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container .account-section .download-section p{
+    margin: 10px 20px 10px 20px;
+    width: 310px;
+    height: 18px;
+}
+
+.container .account-section .download-section .download-link{
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 44px;
+}
+
+.container .account-section .download-section .download-link a{
+    height: 100%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.container .account-section .download-section .download-link .store-link{
+    height: 40px;
+    width: auto;
+}
+
+.container .account-section .download-section .download-link a{
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container .account-section .download-section .download-link a div{
+    padding-left: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.container .account-section .download-section .download-link a div .material-icons{
+    color: rgb(16, 163, 16);
+    font-size: 16px;
+}
+
+/*Footer*/
 footer{
     width: 100%;
-    height: 15%;
+    height: 12%;
     background-color: yellow;
     padding: 0px 16px 0px 16px;
 }
