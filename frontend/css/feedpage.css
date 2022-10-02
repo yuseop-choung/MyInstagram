@@ -1,0 +1,130 @@
+* {
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/*네이게이션 바 부분*/
+nav .nav-wrapper{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav-wrapper .nav-contents{
+    width: 975px;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /*네이게이션 바 - 로고 부분*/
+nav .nav-wrapper .nav-contents .logo-section-wrapper{
+
+}
+
+nav .nav-wrapper .nav-contents .logo-section-wrapper .logo-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-contents .logo-section-wrapper .logo-section img{
+    width: 103px;
+    height: 36px;
+    cursor: pointer;
+}
+
+nav .nav-wrapper .nav-contents .logo-section-wrapper .logo-section button{
+
+}
+
+nav .nav-wrapper .nav-contents .logo-section-wrapper .logo-section button div{
+
+}
+
+nav .nav-wrapper .nav-contents .logo-section-wrapper .logo-section button div span{
+    background-color: #fff;
+}
+
+    /*네이게이션 바 - 검색창 부분*/
+nav .nav-wrapper .nav-contents .searchbar-section-wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-contents .searchbar-section-wrapper input{
+    width: 268px;
+    height: 36px;
+    padding: 3px 16px 3px 16px;
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+nav .nav-wrapper .nav-contents .searchbar-section-wrapper .searchbar-info-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 236px;
+    height: 25px;
+    padding: 0px 16px 0px 16px;
+}
+
+.searchbar-section-wrapper .searchbar-info-wrapper .icon-wrapper{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+} 
+
+.searchbar-section-wrapper .searchbar-info-wrapper .icon-wrapper span{
+    width: 16px;
+    height: 16px;
+    /*font-size: 15px;*/
+    color: rgb(143, 140, 140);
+}
+
+.searchbar-section-wrapper .searchbar-info-wrapper .searchbar-text{
+    font-size: 17px;
+}
+
+
+    /*네이게이션 바 - 메뉴 아이콘 부분*/
+nav .nav-wrapper .nav-contents .menu-section-wrapper{
+    
+}
+
+nav .nav-wrapper .nav-contents .menu-section-wrapper .menu-section{
+    width: 278px;
+    height: 24px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav .nav-wrapper .nav-contents .menu-section-wrapper .menu-section .icon-wrapper{
+    width: 24px;
+    height: 24px;
+    margin-left: 22px;
+}
+
+nav .nav-wrapper .nav-contents .menu-section-wrapper .menu-section #first_icon{
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+}
+
+nav .nav-wrapper .nav-contents .menu-section-wrapper .menu-section span{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
