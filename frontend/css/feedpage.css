@@ -13,6 +13,7 @@ body {
 /*네이게이션 바 부분*/
 nav {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -172,25 +173,30 @@ nav .nav-wrapper .nav-contents .menu-section-wrapper .menu-section span{
 
 /*메인 컨텐츠 부분*/
 main {
+    z-index: 1;
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: calc(100vh - 60px);
-    overflow: hidden;
+    /*height: calc(100vh - 60px);*/
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
 }
 
 main div{
     width: 100%;
     height: 100%;
     justify-content: center;
+    background-color: transparent;
 }
 
 main div section {
     width: 821px;
     height: 100%;
     margin: auto;
+    display: flex;
+    overflow: hidden;
     position: relative;
-    background-color: yellow;
+    background-color: transparent;
 }
 
 /*왼쪽 컨텐츠 부분*/
@@ -198,19 +204,139 @@ main div section .left-contents{
     width: 470px;
     margin-top: 10px;
     margin-right: 32px;
-    background-color: blue;
+    /*background-color: blue;*/
+}
+
+/*왼쪽 상단 공백 부분*/
+main div section .left-contents .blank{
+    width: 100%;
+    height: 56px;
+    padding-top: 14px;
 }
 
 /*왼쪽 상단 스토리 부분*/
+main div section .left-contents .story-contents{
+    width: 100%;
+    height: 119px;
+    margin-top: 16px;
+    display: block;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    padding: 16px 0px 16px 0px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+main div section .left-contents .story-contents .story-list{
+    width: 468px;
+    height: 85px;
+    background-color: aqua;
+}
+
+.left-contents .story-contents .story-list .contents-wrapper0{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+    /*각 버튼에 대해 상황에 따른 hidden 유무 부여 필요*/
+.left-contents .story-contents .story-list .contents-wrapper0 .btn-prev{
+    position: absolute;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    margin: 0px 8px 0px 8px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-contents .story-contents .story-list .contents-wrapper0 .btn-next{
+    position: absolute;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    margin: 0px 8px 0px 8px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-contents .story-contents .story-list .contents-wrapper0 button .direction-icon{
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.left-contents .story-contents .story-list .contents-wrapper1{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+}
+
+.left-contents .story-contents .story-list .profile-header{
+    position: relative;
+    display: flex;
+    width: 32px;
+    height: 85px;
+}
+
+.left-contents .story-contents .story-list .profile-header .profile-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.left-contents .story-contents .story-list .profile-header .profile-list .profile-component{
+    width: 66px;
+    height: 122px;
+}
+
+.profile-component .profile-wrapper{
+
+}
+
+.profile-component .profile-wrapper .btn-profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-component .profile-wrapper .btn-profile .img-wrapper{
+
+}
+
+.profile-component .profile-wrapper .btn-profile .img-wrapper canvas{
+    width: 66px;
+    height: 66px;
+
+}
+
+.profile-component .profile-wrapper .btn-profile .img-wrapper span{
+    width: 56px;
+    height: 56px;
+}
+
+.profile-component .profile-wrapper .btn-profile .img-wrapper .name-wrapper{
+
+}
+
+.profile-component .profile-wrapper .btn-profile .img-wrapper .name-wrapper .name-text{
+
+}
+
 
 /*왼쪽 하단 게시글 부분*/
 
 /*우측 컨텐츠 부분*/
 main div section .right-contents{
-    width: 319px;
     position: absolute;
-    left: 781px;
     top: 90px;
+    left: 61.2%;
+    width: 319px;
     margin-bottom: 30px;
     background-color: blueviolet;
 }
